@@ -15,8 +15,10 @@ $stmt->bind_param("sss", $name, $email, $message);
 $stmt->execute();
 
 if ($stmt->affected_rows > 0) {
-    echo "✅ Message sent successfully!";
+    echo "<script>alert('Message sent successfully!'); window.location.href='index.php';</script>";
+    exit();
 } else {
-    echo "❌ Failed to send message.";
+    echo "<script>alert('Failed to send message'); window.location.href='index.php';</script>";
+    exit();
 }
 ?>

@@ -29,3 +29,19 @@ button {
   background-color: var(--primary-aqua)!important;
   color: var(--text-dark)!important;
 }
+table {
+  border: 1px solid black;
+  width: 900px; 
+  margin: 50px auto; 
+  border-collapse: collapse; 
+}
+
+th, tr, td {
+  border: 1px solid black !important;
+  text-align: center;
+  padding: 10px;
+}
+h5{
+  text-align: center;
+  margin-top: 100px!important;
+}

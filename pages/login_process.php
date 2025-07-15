@@ -21,6 +21,8 @@ if ($result->num_rows === 1) {
     if (password_verify($password, $admin['password'])) {
         $_SESSION['admin_logged_in'] = true;
         $_SESSION['admin_username'] = $username;
+        $_SESSION['logged_in'] = true;
+
         header("Location: dashboard.php");
         exit();
     } else {
@@ -31,3 +33,4 @@ if ($result->num_rows === 1) {
     echo "<script>alert('Admin not found'); window.location.href='login.php';</script>";;
 }
 ?>
+
