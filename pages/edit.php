@@ -1,7 +1,7 @@
 <?php
 include "../includes/header.php";
 
-$conn = new mysqli("localhost", "root", "", "task");
+require "../Database/db.php";
 
 // Get message by ID
 $id = $_GET['id'];
