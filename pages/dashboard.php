@@ -36,7 +36,7 @@ if ($result && $result->num_rows > 0) {
                 <td>{$row['message']}</td>
                 <td>
                     <a href='edit.php?id={$row['id']}'style='color: black; text-decoration: none;'>Edit</a> |
-                    <a href='delete.php?id={$row['id']}' style='color: red;  text-decoration: none;'>Delete</a>
+                    <a href='../Process/delete.php?id={$row['id']}' style='color: red;  text-decoration: none;'>Delete</a>
                 </td>
               </tr>";
     }

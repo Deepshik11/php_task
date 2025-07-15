@@ -11,7 +11,7 @@ $row = $result->fetch_assoc();
 
 <div class="d-flex flex-column align-items-center">
     <h2 class="mt-5">Edit Message</h2>
-    <form class="form_control d-flex justify-content-center align-items-center flex-column border p-4 rounded shadow mt-4" action="update.php" , method="post" style="width:500px">
+    <form class="form_control d-flex justify-content-center align-items-center flex-column border p-4 rounded shadow mt-4" action="../Process/update.php" , method="post" style="width:500px">
         <div class="mb-3 w-100">
             <input type="hidden" name="id" value="<?= $row['id'] ?>">
             <input type="text" class="form-control" name="name" value="<?= $row['name'] ?>" required placeholder="Enter Username">

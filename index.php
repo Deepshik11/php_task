@@ -5,7 +5,7 @@
     <div style="height:100vh" class="d-flex flex-column justify-content-center">
         <h1 class="text-center">Contact Us</h1>
         <div class="d-flex justify-content-center form_container">
-            <form class="form_control d-flex justify-content-center align-items-center flex-column border p-4 rounded shadow mt-4" action="contact_process.php" , method="post" style="width:500px">
+            <form class="form_control d-flex justify-content-center align-items-center flex-column border p-4 rounded shadow mt-4" action="Process/contact_process.php" , method="post" style="width:500px">
                 <div class="mb-3 w-100">
                     <label class="form-label">Name </label>
                     <input type="text" class="form-control" name="name" placeholder="Enter Username">

@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "task");
+require '../Database/db.php';
 
 $id = $_POST['id'];
 $name = $_POST['name'];
@@ -11,5 +11,5 @@ $stmt = $conn->prepare($sql);
 $stmt->bind_param("sssi", $name, $email, $message, $id);
 $stmt->execute();
 
-header("Location: dashboard.php");
+header("Location: ../pages/dashboard.php");
 ?>

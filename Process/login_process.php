@@ -1,10 +1,7 @@
 <?php
 session_start();
 // Connect the database
-$conn = new mysqli("localhost", "root", "", "task");
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require '../Database/db.php';
 //Get the data from the login.php
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -23,14 +20,14 @@ if ($result->num_rows === 1) {
         $_SESSION['admin_username'] = $username;
         $_SESSION['logged_in'] = true;
 
-        header("Location: dashboard.php");
+        header("Location: ../pages/dashboard.php");
         exit();
     } else {
-        echo "<script>alert('Wrong Password'); window.location.href='login.php';</script>";
+        echo "<script>alert('Wrong Password'); window.location.href='../pages/login.php';</script>";
         exit();
     }
 } else {
-    echo "<script>alert('Admin not found'); window.location.href='login.php';</script>";;
+    echo "<script>alert('Admin not found'); window.location.href='../pages/login.php';</script>";;
 }
 ?>
 

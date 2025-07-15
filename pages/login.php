@@ -6,7 +6,7 @@
     <div style="height:100vh" class="d-flex flex-column justify-content-center">
         <h1 class="text-center">Admin Login</h1>
         <div class="d-flex justify-content-center">
-            <form class="custom_form border p-4 rounded shadow mt-4" action="login_process.php" , method="post">
+            <form class="custom_form border p-4 rounded shadow mt-4" action="../Process/login_process.php" , method="post">
                 <div class="mb-3">
                     <label class="form-label">Username</label>
                     <input type="text" class="form-control" name="username" placeholder="Enter Username">
