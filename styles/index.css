@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+  --primary-aqua: #0ABAB5;
+  --mint-aqua: #4EE0D4;
+  --soft-mint: #B5F2E0;
+  --baby-pink: #FFEFF3;
+  --text-dark: #0d0d0d;
+}
+
+body {
+  background-color: var(--baby-pink)!important;
+  color: var(--dark-blue);
+}
+.custom_form{
+    width: 350px;
+    filter: blur(10);
+}
+h1,h2{
+    color: var(--text-dark)!important;
+}
+.form_control,.custom_form{
+   background-color: var(--soft-mint);
+}
+button {
+  background-color: var(--primary-aqua)!important;
+  color: var(--text-dark)!important;
+}
